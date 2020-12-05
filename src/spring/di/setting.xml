@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 <!-- Exam exam = new kysoncExam(); -->
-<bean id="exam" class="spring.di.entity.KysoncExam" >
-	<!-- <constructor-arg index="0" value="10"/> -->
-	<!-- <constructor-arg index="1" value="20"/> -->
-	<!-- <constructor-arg index="2" value="30"/> -->
- 	<!-- <constructor-arg index="3" value="40"/> -->
+<!--  <bean id="exam" class="spring.di.entity.KysoncExam" >
+	<constructor-arg index="0" value="10"/> 
+	<constructor-arg index="1" value="20"/> 
+	<constructor-arg index="2" value="30"/> 
+ 	<constructor-arg index="3" value="40"/> 
  	<constructor-arg name="kor" value="10"/> 
  	<constructor-arg name="eng" value="20"/>
  	<constructor-arg name="com" value="30"/>
  	<constructor-arg name="math" value="40"/>
-</bean>
+</bean> -->
+<bean id="exam" class="spring.di.entity.KysoncExam" p:kor="10" p:eng="10"/>
 
 <!-- ExamConsole console = new GridExamConsole(); -->
 <bean id="console" class="spring.di.ui.InlineExamConsole">
