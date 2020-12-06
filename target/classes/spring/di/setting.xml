@@ -21,8 +21,8 @@
  	<constructor-arg name="com" value="30"/>
  	<constructor-arg name="math" value="40"/>
 </bean> -->
-	<bean id="exam1" class="spring.di.entity.KysoncExam" p:kor="10" p:eng="10"/>
-	<bean id="exam2" class="spring.di.entity.KysoncExam" p:kor="20" p:eng="30"/>
+	<!-- <bean id="exam1" class="spring.di.entity.KysoncExam" p:kor="10" p:eng="10"/>
+	<bean id="exam2" class="spring.di.entity.KysoncExam" p:kor="20" p:eng="30"/> -->
 
 	<!-- ExamConsole console = new GridExamConsole(); -->
 	<bean id="console" class="spring.di.ui.InlineExamConsole">
