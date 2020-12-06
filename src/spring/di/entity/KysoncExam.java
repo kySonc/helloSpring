@@ -1,5 +1,8 @@
 package spring.di.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class KysoncExam implements Exam {
 	
 	private int kor;
@@ -10,9 +13,7 @@ public class KysoncExam implements Exam {
 	public KysoncExam() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
+		
 	public KysoncExam(int kor, int eng, int math, int com) {
 		
 		this.kor = kor;
