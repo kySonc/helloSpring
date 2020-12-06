@@ -33,12 +33,12 @@ public class Program {
 		//ExamConsole console = context.getBean(ExamConsole.class);
 		console.print();
 		
-		List<Exam> exams = (List<Exam>) context.getBean("exams");//new ArrayList<>();
+		//List<Exam> exams = (List<Exam>) context.getBean("exams");//new ArrayList<>();
 		//exams.add(new KysoncExam(1,1,1,1)); settin.xml ¼³Á¤
 				
-		for(Exam e : exams) {
-			System.out.println(e);
-		}
+		/*
+		 * for(Exam e : exams) { System.out.println(e); }
+		 */
 		
 	}
 
