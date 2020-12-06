@@ -1,16 +1,9 @@
 package spring.di;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import spring.di.entity.Exam;
-import spring.di.entity.KysoncExam;
 import spring.di.ui.ExamConsole;
-import spring.di.ui.GridExamConsole;
-import spring.di.ui.InlineExamConsole;
 
 public class Program {
 
@@ -24,7 +17,8 @@ public class Program {
 //		console.setExam(exam);
 //		ExamConsole console = ?;
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/di/setting.xml");
+//		ApplicationContext context = new ClassPathXmlApplicationContext("spring/di/setting.xml"); //Xml을 이용
+		ApplicationContext context = new AnnotationConfigApplicationContext(KysoncDIConfig.class); //어노테이션을 이용
 		
 		//Exam exam = context.getBean(Exam.class);
 		//System.out.println(exam.toString());
